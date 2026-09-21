@@ -253,7 +253,7 @@ useEffect(() => {
       const timeout = setTimeout(() => controller.abort(), 30000);
       
       const response = await fetch(
-        "http://127.0.0.1:8000/check-doubt",
+        "https://verified-backend-bejq.onrender.com/check-doubt",
         {
           method: "POST",
           headers: {
@@ -586,7 +586,7 @@ useEffect(() => {
 
   try {
     const response = await fetch(
-      `http://127.0.0.1:8000/search-images?q=${encodeURIComponent(query)}`
+      `https://verified-backend-bejq.onrender.com/search-images?q=${encodeURIComponent(query)}`
     );
 
     const data = await response.json();
