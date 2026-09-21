@@ -13,6 +13,10 @@ DB_PATH = Path(__file__).parent / "runs.db"
 
 app = FastAPI(title="Doubt Trust Checker API")
 
+@app.get("/")
+async def root():
+    return {"status": "ok", "service": "VerifiEd backend"}
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173"],
