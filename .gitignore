@@ -3,4 +3,4 @@ backend/__pycache__/
 frontend/node_modules/
 frontend/dist/
 .env
-*.pyc
+*.pycbackend/runs.db
